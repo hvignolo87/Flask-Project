@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block body %}
+    <h1>Hi {{name}}</h1>
+    <h2>Welcome</h2>
+    {% if name == 'John Doe' %}
+    <h2>The name is John Doe</h2>
+    {% else %}
+    <h2>No John Doe</h2>
+    {% endif %}
+{% endblock %}
