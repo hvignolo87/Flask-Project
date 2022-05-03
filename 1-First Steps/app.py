@@ -14,7 +14,7 @@ app = Flask(__name__)
 # http://127.0.0.1:5000/home
 @app.route("/home")
 def index():
-    #return "Hola, mundo!"
+    #return "Hello, world!"
     #return render_template("index.html")
     name = "Hernan"
     return render_template('index.html', name=name)
@@ -24,7 +24,7 @@ def iterate():
     a = [1, 2, 3]
     return render_template('iterate.html', param=a)
 
-# http://127.0.0.1:5000/contacto
+# http://127.0.0.1:5000/contact
 @app.route("/contact")
 def contact():
     #return "<h1>Contact</h1>"
