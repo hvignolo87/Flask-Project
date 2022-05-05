@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block body %}
+<h2>Welcome!</h2>
+<form action="{{ url_for('contact') }}" method="post">
+    <input type="text" name="input_name" placeholder="Enter a name">
+    <button>Send</button>
+</form>
+{% endblock %}
