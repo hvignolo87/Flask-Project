@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
+{% block title %} {{ title }} {% endblock %}
 {% block body %}
-<h2>Welcome!</h2>
-<form action="{{ url_for('contact') }}" method="post">
-    <input type="text" name="input_name" placeholder="Enter a name">
-    <button>Send</button>
-</form>
+    {% from '_macro.html' import render_field %}
+    <form>
+        {{ render_field(form.username) }}
+        {{ render_field(form.email) }}
+        {{ render_field(form.comment) }}
+    </form>
 {% endblock %}
