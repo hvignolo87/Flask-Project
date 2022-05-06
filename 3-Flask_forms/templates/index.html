@@ -2,9 +2,10 @@
 {% block title %} {{ title }} {% endblock %}
 {% block body %}
     {% from '_macro.html' import render_field %}
-    <form>
+    <form name="sentMessage" id="contactForm" method="POST">
         {{ render_field(form.username) }}
         {{ render_field(form.email) }}
         {{ render_field(form.comment) }}
+        <button type="submit">Send Form</button>
     </form>
 {% endblock %}
