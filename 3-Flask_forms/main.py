@@ -14,6 +14,8 @@ def index():
         print(comment_form.username.data)
         print(comment_form.email.data)
         print(comment_form.comment.data)
+    else:
+        print('An error has ocurred')
 
     # Page title
     title = 'Forms with Flask'
